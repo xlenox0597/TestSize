@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.testsize"
-        minSdk 30
+        minSdk 31
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -46,4 +46,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    dependencies
+        def appCenterSdkVersion = '4.4.5'
+        implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+        implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 }
